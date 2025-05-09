@@ -1,0 +1,25 @@
+# Ignore virtual environments
+.venv/
+venv/
+
+# VSCode project settings
+.vscode/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# Checkpoint files and temp outputs
+.ipynb_checkpoints/
+*.ckpt
+*.h5
+*.keras
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs and runtime files
+*.log
+*.tmp
