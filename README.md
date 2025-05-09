@@ -25,11 +25,11 @@ This project uses the [Kaggle Human AI Artwork Dataset](https://www.kaggle.com/d
 
 ## 🧠 Model Architectures
 
-| Task                 | Model            | Top-1 Accuracy | Top-5 Accuracy | F1 Score (avg)   |
-|----------------------|------------------|----------------|----------------|------------------|
-| Binary (Human vs AI) | Custom CNN (tuned) | **93.71%**     | N/A            | 0.94             |
-| Grouped (4 Classes)  | Custom CNN        | **92.85%**     | N/A            | 0.93             |
-| Flat (47 Classes)    | Custom CNN        | **44.38%**     | **84.22%**     | 0.39 (weighted)  |
+| Task                   | Model             | Top-1 Accuracy | Top-5 Accuracy | F1 Score (avg)   |
+|------------------------|------------------|----------------|----------------|------------------|
+| Binary (Human vs AI)   | Custom CNN (tuned) | **93.71%**     | 99.86% (binary) | **0.94**         |
+| Grouped (4 Classes)    | Custom CNN         | **92.85%**     | **99.42%**      | **0.93**         |
+| Flat (47 Classes)      | Custom CNN         | **44.38%**     | **84.22%**      | **0.39 (weighted)** |
 
 **Tuned Hyperparameters**:
 - 3 Convolutional layers: 32 → 64 → 64
@@ -87,9 +87,13 @@ Grad-CAM visualizations reveal **style-specific activation** patterns:
 | **Grouped** | Source-specific traits (e.g., surrealism in LD)     |
 | **Flat**   | Style-local cues (e.g., color patches in Fauvism, brushwork in Realism) |
 
-<p align="center">
-  <img src="assets/gradcam_comparison.png" width="700"/>
-</p>
+<table>
+  <tr>
+    <td align="center"><strong>Binary</strong><br><img src="assets/binary_gradcam.png" width="250"/></td>
+    <td align="center"><strong>Grouped</strong><br><img src="assets/grouped_gradcam.png" width="250"/></td>
+    <td align="center"><strong>Flat</strong><br><img src="assets/flat_gradcam.png" width="250"/></td>
+  </tr>
+</table>
 
 ---
 
