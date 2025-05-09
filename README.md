@@ -89,9 +89,9 @@ Grad-CAM visualizations reveal **style-specific activation** patterns:
 
 <table>
   <tr>
-    <td align="center"><strong>Binary</strong><br><img src="assets/binary_gradcam.png" width="250"/></td>
-    <td align="center"><strong>Grouped</strong><br><img src="assets/grouped_gradcam.png" width="250"/></td>
-    <td align="center"><strong>Flat</strong><br><img src="assets/flat_gradcam.png" width="250"/></td>
+    <td align="center"><strong>Binary</strong><br><img src="assets/gradcam_binary.png" width="250"/></td>
+    <td align="center"><strong>Grouped</strong><br><img src="assets/gradcam_grouped.png" width="250"/></td>
+    <td align="center"><strong>Flat</strong><br><img src="assets/gradcam_flat.png" width="250"/></td>
   </tr>
 </table>
 
